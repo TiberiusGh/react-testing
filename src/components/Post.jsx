@@ -1,12 +1,10 @@
-const names = ['Tiberius', 'Lisa']
+import classes from './Post.module.css'
 
-export function Post() {
-  const choosenName = Math.random() > 0.5 ? names[0] : names[1]
-
+export function Post(props) {
   return (
-    <div>
-      <p>{choosenName}</p>
-      <p>Hello!</p>
-    </div>
+    <li className={classes.post}>
+      <p className={classes.author}>{props.author}</p>
+      <p className={classes.text}>{props.body}</p>
+    </li>
   )
 }
