@@ -1,6 +1,6 @@
 # react-testing
 
-Learning and testing react
+A repository for learning and testing react
 
 # License
 
